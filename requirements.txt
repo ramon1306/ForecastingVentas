@@ -1,0 +1,10 @@
+pandas>=2.2,<3
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+#jupyter>=1.1,<2
+streamlit>=1.37,<2
+joblib>=1.4,<2
+holidays>=0.79,<1
+pytest>=8.3,<9
