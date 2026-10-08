@@ -10,17 +10,14 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 
-hide_embed_footer = """
+st.markdown("""
     <style>
-    /* Oculta la barra/botón inferior de "Pantalla completa" en modo embed */
-    [data-testid="stViewerBadge"], 
-    .stAppViewerBadge,
-    footer,
-    a[data-testid="stAppViewerBadge"] {
-        display: none !important;
-    }
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    div[data-testid="stStatusWidget"] {display: none;}
     </style>
-"""
+""", unsafe_allow_html=True)
 
 st.markdown(hide_embed_footer, unsafe_allow_html=True)
 
