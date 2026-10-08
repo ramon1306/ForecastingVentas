@@ -1,0 +1,6 @@
+[client]
+toolbarMode = "hidden"
+showErrorDetails = false
+
+[theme]
+base = "light"
