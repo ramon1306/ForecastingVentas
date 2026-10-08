@@ -10,6 +10,20 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 
+hide_embed_footer = """
+    <style>
+    /* Oculta la barra/botón inferior de "Pantalla completa" en modo embed */
+    [data-testid="stViewerBadge"], 
+    .stAppViewerBadge,
+    footer,
+    a[data-testid="stAppViewerBadge"] {
+        display: none !important;
+    }
+    </style>
+"""
+
+st.markdown(hide_embed_footer, unsafe_allow_html=True)
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_PATH = PROJECT_ROOT / "models" / "modelo_final.joblib"
 DATA_PATH = PROJECT_ROOT / "data" / "processed" / "inferencia_df_transformado.csv"
