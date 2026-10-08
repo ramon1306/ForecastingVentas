@@ -10,15 +10,6 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 
-st.markdown("""
-    <style>
-    #MainMenu {visibility: hidden;}
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
-    div[data-testid="stStatusWidget"] {display: none;}
-    </style>
-""", unsafe_allow_html=True)
-
 st.markdown(hide_embed_footer, unsafe_allow_html=True)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
